@@ -10,7 +10,7 @@ const ThemeToggle = () => {
     }
 
     return(
-        <div className="rounded-md bg-[var(--neutral-200)] hover:bg-[var(--neutral-300)] dark:bg-[var(--neutral-700)] dark:hover:hover:bg-[var(--neutral-600)] p-2.5" onClick={toggleTheme}>
+        <button className="focus-visible:ring-[var(--red-500)] focus:ring-2 focus:ring-[var(--red-500)] dark:focus:ring-[var(--red-400)] dark:focus:border-background focus:border-background dark:focus:bg-[var(--neutral-600)] rounded-md bg-[var(--neutral-200)] hover:bg-[var(--neutral-300)] dark:bg-[var(--neutral-700)] dark:hover:hover:bg-[var(--neutral-600)] p-2.5" onClick={toggleTheme}>
             <span>
               {theme === 'dark'?
                 <Image
@@ -31,7 +31,7 @@ const ThemeToggle = () => {
                 </Image>
               }
             </span>
-        </div>
+        </button>
     )
 }
 export default ThemeToggle;
