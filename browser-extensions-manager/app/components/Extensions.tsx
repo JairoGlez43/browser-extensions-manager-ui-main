@@ -60,8 +60,8 @@ const Extensions = () => {
                                 <Image alt={`${ext.name} logo`} src={ext.logo} width={100} height={100}></Image>
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <CardTitle className=''>{ext.name}</CardTitle>
-                                <CardDescription className=''>{ext.description}</CardDescription>
+                                <CardTitle>{ext.name}</CardTitle>
+                                <CardDescription className='line-clamp-2'>{ext.description}</CardDescription>
                             </div>
                         </div>
                         <div className='flex justify-between items-center mt-2'>
