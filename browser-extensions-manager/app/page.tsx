@@ -1,8 +1,6 @@
-import Image from "next/image";
-//import { Button } from "@/components/ui/button";
 import Extensions from './components/Extensions';
-import ThemeToggle from './components/Theme-Toggle';
 import Logo from "./components/Logo";
+import ClientToggle from './components/ClientToggle';
 
 export default function Home() {
   return (
@@ -12,18 +10,11 @@ export default function Home() {
           <div>
             <div className="rounded-full">
               <span>
-                {/*<Image
-                  src="/assets/images/logo.svg"
-                  alt="Browser Extensions Manager Logo"
-                  width={125}
-                  height={125}
-                  className="rounded-full"
-                />*/}
                 <Logo width={125} height={30}></Logo>
               </span>
             </div>
           </div>
-          <ThemeToggle></ThemeToggle>
+          <ClientToggle></ClientToggle>
         </div>
       </header>
       <Extensions></Extensions>

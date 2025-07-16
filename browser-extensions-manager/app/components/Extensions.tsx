@@ -28,7 +28,7 @@ const Extensions = () => {
             }
             return ext;
         });
-        //console.log(updateData);
+        
         setExtensions(updateData);
     }
 
@@ -39,7 +39,7 @@ const Extensions = () => {
 
     return (
         <div className="flex flex-col min-h-screen text-[var(--neutral-900)] dark:text-[var(--neutral-0)]">
-            <header className="w-full mb-4">
+            <section className="w-full mb-4">
                 <div className="container flex flex-col gap-2 sm:flex-row sm:justify-between items-center w-full">
                     <h1 className="text-2xl font-bold">Extensions List</h1>
                     <div className="flex space-x-2">
@@ -50,8 +50,8 @@ const Extensions = () => {
                         }
                     </div>
                 </div>
-            </header>
-            {/* Content goes here */}
+            </section>
+            
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 md:gap-4 items-stretch text-[var(--gradient-900)] dark:text-[var(--gradient-100)]'>
                 {filteredData.map((ext) => (
                     <Card key={ext.name} className="flex flex-col justify-between p-4 rounded-lg shadow-lg border-1 bg-[var(--neutral-0)] border-[var(--neutral-200)] dark:bg-[var(--neutral-800)] dark:border-[var(--neutral-600)] overflow-hidden h-40">
